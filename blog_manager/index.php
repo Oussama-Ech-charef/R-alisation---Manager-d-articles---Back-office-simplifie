@@ -49,7 +49,7 @@ $articles = $article_obj->all();
                          <h2 class="post_card_title"><?php echo htmlspecialchars($article['title']); ?></h2>
         
                          <p class="post_card_content">
-                                <?php echo htmlspecialchars($article['content']); ?>
+                                <?php echo substr(htmlspecialchars($article['content']), 0, 100) . '...'; ?>
                         </p>
                         <div class="post_card_footer">
                             <span>By <strong><?php echo htmlspecialchars($article['user_name']); ?></strong></span>
